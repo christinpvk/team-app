@@ -38,6 +38,11 @@
         }
       }
     }
+    &.menu-list {
+      @media only screen and (max-width: 767px) {
+        overflow: auto;
+      }
+    }
     &.social-list {
       justify-content: flex-end;
       li {
@@ -45,6 +50,9 @@
           font-size: 12px;
           padding: 0 0.5rem;
         }
+      }
+      @media only screen and (max-width: 767px) {
+        display: none;
       }
     }
   }

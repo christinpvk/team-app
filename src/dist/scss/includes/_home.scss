@@ -129,6 +129,9 @@ h6 {
       background: #fff;
       transform: rotate(25deg);
       top: 18px;
+      @media only screen and (max-width: 767px) {
+        content: unset;
+      }
     }
     &::after {
       content: "";
@@ -139,6 +142,9 @@ h6 {
       background: #fff;
       transform: rotate(-25deg);
       top: 18px;
+      @media only screen and (max-width: 767px) {
+        content: unset;
+      }
     }
     .next-match {
       position: relative;
@@ -163,6 +169,8 @@ h6 {
         .match {
           h6 {
             text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
             &.versus {
               font-size: 12px;
               color: #fff;
@@ -175,7 +183,14 @@ h6 {
               margin: auto;
               margin-bottom: 0.5rem;
             }
+            @media only screen and (max-width: 767px) {
+              font-size: 14px;
+            }
           }
+        }
+        @media only screen and (max-width: 767px) {
+          display: flex;
+          align-items: center;
         }
       }
       .content {
@@ -183,9 +198,15 @@ h6 {
           color: #333;
           font-size: 12px;
           text-transform: uppercase;
+          @media only screen and (max-width: 767px) {
+            font-size: 14px;
+          }
           .match-type {
             font-size: 14px;
             font-family: "robotob";
+            @media only screen and (max-width: 767px) {
+              font-size: 16px;
+            }
           }
         }
         .match {
@@ -208,10 +229,25 @@ h6 {
               font-size: 46px;
               font-family: "robotob";
               color: $primary-color;
+              @media only screen and (max-width: 767px) {
+                font-size: 30px;
+              }
+            }
+            @media only screen and (max-width: 767px) {
+              display: flex;
+              font-size: 14px;
+              justify-content: flex-start;
             }
           }
         }
       }
+    }
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      height: auto;
+      position: static;
+      background: #f5f5f5;
+      border-radius: 0;
     }
   }
 }
@@ -234,11 +270,24 @@ h6 {
       width: 50%;
       top: 30%;
       left: 100px;
+      @media only screen and (max-width: 767px) {
+        width: 80%;
+        top: 20%;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
       .headline {
         color: #fff;
         font-size: 60px;
         text-transform: uppercase;
         font-family: "robotocb";
+        @media only screen and (max-width: 767px) {
+          font-size: 48px;
+        }
+        @media only screen and (max-width: 480px) {
+          font-size: 36px;
+        }
       }
       .sub-head {
         color: #fff;
@@ -259,6 +308,10 @@ h6 {
     opacity: 0.5;
     &:hover {
       opacity: 1;
+    }
+    @media only screen and (max-width: 767px) {
+      bottom: 15%;
+      top: unset;
     }
   }
   .prev {
@@ -454,6 +507,9 @@ h6 {
       position: relative;
       margin-bottom: 0;
       transition: all 0.3s;
+      @media only screen and (max-width: 480px) {
+        font-size: 24px;
+      }
     }
   }
   .section-link {
@@ -524,6 +580,9 @@ h6 {
         font-family: "robotocb";
         text-transform: uppercase;
         position: relative;
+        @media only screen and (max-width: 767px) {
+          font-size: 22px;
+        }
       }
       .details {
         display: flex;
@@ -538,6 +597,9 @@ h6 {
             opacity: 1;
           }
         }
+      }
+      @media only screen and (max-width: 767px) {
+        bottom: 0;
       }
     }
   }
@@ -580,6 +642,9 @@ h6 {
     }
     .lower-block {
       padding: 2rem 1rem 1rem 1rem;
+    }
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 1rem;
     }
   }
   .full-block {
