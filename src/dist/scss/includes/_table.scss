@@ -1,0 +1,42 @@
+table {
+  td,
+  th {
+    font-family: "roboto";
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+  }
+  thead {
+    background-color: $bg-primary;
+    color: #fff;
+    border: 1px solid $primary-color;
+    th {
+      border: none !important;
+    }
+  }
+  tbody {
+    color: #333;
+    border: 1px solid #eee;
+    tr {
+      &.highlight {
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+      }
+    }
+    td {
+      vertical-align: middle !important;
+    }
+    .team-block {
+      display: flex;
+      align-items: center;
+      .team-logo {
+        img {
+          width: 40px;
+        }
+      }
+      .team-name {
+        margin-left: 15px;
+      }
+    }
+  }
+}

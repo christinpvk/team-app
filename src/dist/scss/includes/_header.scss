@@ -1,0 +1,147 @@
+.top-header {
+  height: 40px;
+  background: $bg-primary;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  ul {
+    &.menu-list,
+    &.social-list {
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      li {
+        line-height: 40px;
+        &:first-child {
+          a {
+            padding-left: 0;
+          }
+        }
+        &:last-child {
+          a {
+            padding-right: 0;
+          }
+        }
+        a {
+          font-family: "roboto";
+          color: rgba(255, 255, 255, 0.7);
+          transition: all 0.3s;
+          font-size: 11px;
+          text-transform: uppercase;
+          padding: 0 0.7rem;
+          letter-spacing: 0.5px;
+          &:hover {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &.social-list {
+      justify-content: flex-end;
+      li {
+        a {
+          font-size: 12px;
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
+}
+.header {
+  background: transparent;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  .navbar {
+    padding: 0.5rem 0;
+    .navbar-brand {
+      padding: 0;
+      img {
+        width: 60px;
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        padding: 1rem;
+        transition: all 0.3s;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-family: "robotob";
+        &:hover,
+        &:focus {
+          color: rgb(255, 255, 255);
+        }
+      }
+      &:last-child {
+        .nav-link {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+.header-white {
+  background: #fff;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  .navbar {
+    .nav-item {
+      .nav-link {
+        color: $primary-color;
+        &:hover,
+        &:focus {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+.page-header {
+  background: #666;
+  background-image: url("../img/chelsea-jersey-bg-02.jpg");
+  background-size: cover;
+  margin-top: 40px;
+  position: relative;
+  .header-bar {
+    padding: 70px 0;
+    ol {
+      &.breadcrumb {
+        padding: 1rem 0;
+        background: transparent;
+        .back {
+          color: rgba(255, 255, 255, 0.7);
+          cursor: pointer;
+          font-size: 18px;
+          transition: all 0.3s;
+          &:hover {
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+    .page-title {
+      pad: 1rem;
+      text-align: center;
+      font-family: "robotocb";
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+  .overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(13, 32, 60, 0.58) 0%,
+      rgba(2, 15, 29, 0.36) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
