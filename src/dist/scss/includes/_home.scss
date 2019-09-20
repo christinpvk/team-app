@@ -129,7 +129,7 @@ h6 {
       background: #fff;
       transform: rotate(25deg);
       top: 18px;
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 991px) {
         content: unset;
       }
     }
@@ -142,7 +142,7 @@ h6 {
       background: #fff;
       transform: rotate(-25deg);
       top: 18px;
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 991px) {
         content: unset;
       }
     }
@@ -229,11 +229,11 @@ h6 {
               font-size: 46px;
               font-family: "robotob";
               color: $primary-color;
-              @media only screen and (max-width: 767px) {
+              @media only screen and (max-width: 991px) {
                 font-size: 30px;
               }
             }
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 991px) {
               display: flex;
               font-size: 14px;
               justify-content: flex-start;
@@ -242,7 +242,7 @@ h6 {
         }
       }
     }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 991px) {
       width: 100%;
       height: auto;
       position: static;
@@ -267,9 +267,13 @@ h6 {
     }
     .title-block {
       position: absolute;
-      width: 50%;
+      width: 40%;
       top: 30%;
       left: 100px;
+      @media only screen and (max-width: 991px) {
+        width: 50%;
+        top: 25%;
+      }
       @media only screen and (max-width: 767px) {
         width: 80%;
         top: 20%;
@@ -282,7 +286,10 @@ h6 {
         font-size: 60px;
         text-transform: uppercase;
         font-family: "robotocb";
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 1200px) {
+          font-size: 42px;
+        }
+        @media only screen and (max-width: 991px) {
           font-size: 48px;
         }
         @media only screen and (max-width: 480px) {
@@ -294,6 +301,11 @@ h6 {
         font-family: "robotocl";
         text-transform: capitalize;
         font-size: 18px;
+      }
+    }
+    img {
+      &.banner-image {
+        height: 100vh;
       }
     }
   }
@@ -643,7 +655,7 @@ h6 {
     .lower-block {
       padding: 2rem 1rem 1rem 1rem;
     }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 991px) {
       margin-bottom: 1rem;
     }
   }
@@ -715,6 +727,9 @@ h6 {
         }
       }
     }
+    @media only screen and (max-width: 480px) {
+      min-height: 150px;
+    }
   }
   .video-react {
     .video-react-big-play-button {
@@ -742,6 +757,9 @@ h6 {
     top: 1rem;
     left: 1rem;
     z-index: 9;
+  }
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 1rem;
   }
 }
 .section-banner,
@@ -864,6 +882,9 @@ h2 {
           font-size: 60px;
           font-family: "robotocb";
           text-transform: uppercase;
+          @media only screen and (max-width: 767px) {
+            font-size: 36px;
+          }
         }
       }
       p {
@@ -881,6 +902,10 @@ h2 {
           }
         }
       }
+    }
+    @media only screen and (max-width: 767px) {
+      width: 95%;
+      padding: 1rem;
     }
   }
 }
@@ -928,6 +953,9 @@ h2 {
       min-height: 70px;
     }
   }
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 1rem;
+  }
 }
 .news-view {
   h2 {
@@ -935,12 +963,18 @@ h2 {
       font-family: "robotocb";
       text-transform: uppercase;
       font-size: 60px;
+      @media only screen and (max-width: 767px) {
+        font-size: 36px;
+      }
     }
   }
   h4 {
     &.sub-title {
       font-family: "robotocb";
       font-size: 30px;
+      @media only screen and (max-width: 767px) {
+        font-size: 24px;
+      }
     }
   }
   p {

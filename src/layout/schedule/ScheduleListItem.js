@@ -23,38 +23,42 @@ class ScheduleListItem extends Component {
                 <span className="month ml-1">{this.props.item.month}</span>
                 <span className="year ml-1">{this.props.item.year}</span>
               </p>
-              <Badge
-                className="ml-auto match-category league zi-99"
-                color={
-                  this.props.item.category === "league"
-                    ? "league"
-                    : this.props.item.category === "super-league"
-                    ? "super-league"
-                    : "friendly"
-                }
-              >
-                {this.props.item.category}
-              </Badge>
             </div>
           </CardHeader>
           <CardBody>
             <div className="schedule-match-details">
               <div className="team-block-outer">
-                <div className="team-block">
+                <div className="logo-block">
                   <div className="logo">
                     <img
                       src={"../images/" + this.props.item.firstteamlogo}
                     ></img>
                   </div>
-                  <div className="team ml-3">
-                    <h6>{this.props.item.firstteam}</h6>
+                </div>
+                <div className="team-block">
+                  <div className="teams text-center">
+                    <div className="team">
+                      <h6>{this.props.item.firstteam}</h6>
+                    </div>
+                    <div className="versus">vs</div>
+                    <div className="team">
+                      <h6>{this.props.item.secondteam}</h6>
+                    </div>
+                    <Badge
+                      className="ml-auto match-category league zi-99 mt-3"
+                      color={
+                        this.props.item.category === "league"
+                          ? "premier league"
+                          : this.props.item.category === "super-league"
+                          ? "super-league"
+                          : "friendly"
+                      }
+                    >
+                      {this.props.item.category}
+                    </Badge>
                   </div>
                 </div>
-                <div className="versus">vs</div>
-                <div className="team-block">
-                  <div className="team mr-3">
-                    <h6>{this.props.item.secondteam}</h6>
-                  </div>
+                <div className="logo-block">
                   <div className="logo">
                     <img
                       src={"../images/" + this.props.item.secondteamlogo}

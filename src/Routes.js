@@ -11,7 +11,7 @@ import Club from "./layout/club/Club";
 import About from "./layout/about/About";
 import News from "./layout/news/News";
 import Photos from "./layout/photos/Photos";
-import Videos from "./layout/videos/Videos";
+import Video from "./layout/videos/Videos";
 import Stadium from "./layout/stadium/Stadium";
 import Partners from "./layout/partners/Partners";
 import Contact from "./layout/contact/Contact";
@@ -30,19 +30,133 @@ class Routes extends Component {
         <Router history={this.history}>
           <Topheader />
           <Header />
-          <Route path="/" exact component={Home} />
-          <Route path="/Result" component={Result} />
-          <Route path="/Schedule" component={Schedule} />
-          <Route path="/Players" component={Players} />
-          <Route path="/Club" component={Club} />
-          <Route path="/About" component={About} />
-          <Route path="/News" component={News} />
-          <Route path="/Photos" component={Photos} />
-          <Route path="/Videos" component={Videos} />
-          <Route path="/Stadium" component={Stadium} />
-          <Route path="/Partners" component={Partners} />
-          <Route path="/Contact" component={Contact} />
-          <Route path="/Table" component={Table} />
+          <Route
+            exact
+            path="/"
+            render={props => (
+              <Home
+                {...props}
+                component={Home}
+                title="Home | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/Result"
+            render={props => (
+              <Result
+                {...props}
+                component={Result}
+                title="Results | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/Schedule"
+            render={props => (
+              <Schedule
+                {...props}
+                component={Schedule}
+                title="Schedules | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/Players"
+            render={props => (
+              <Players
+                {...props}
+                component={Players}
+                title="Players | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/Club"
+            render={props => (
+              <Club
+                {...props}
+                component={Club}
+                title="Club | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/About"
+            render={props => (
+              <About
+                {...props}
+                component={About}
+                title="About | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/News"
+            render={props => (
+              <News
+                {...props}
+                component={News}
+                title="News | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/Photos"
+            render={props => (
+              <Photos
+                {...props}
+                component={Photos}
+                title="gallery | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/Videos"
+            render={props => (
+              <Video {...props} component={Video} title="Index Page" />
+            )}
+          />
+          <Route
+            path="/Stadium"
+            render={props => (
+              <Stadium
+                {...props}
+                component={Stadium}
+                title="Stadium | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/Partners"
+            render={props => (
+              <Partners
+                {...props}
+                component={Partners}
+                title="Partners | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/Contact"
+            render={props => (
+              <Contact
+                {...props}
+                component={Contact}
+                title="Contact | Chelsea : My Favourite Club"
+              />
+            )}
+          />
+          <Route
+            path="/Table"
+            render={props => (
+              <Table
+                {...props}
+                component={Table}
+                title="Point Table | Chelsea : My Favourite Club"
+              />
+            )}
+          />
           <Route path="/ComingSoon" component={ComingSoon} />
           <PrivateRoute path="/VideoPlay" component={VideoPlay} />
           <PrivateRoute path="/NewsView" component={NewsView} />

@@ -5,6 +5,9 @@ import Quicklinks from "../quicklink/Quicklinks";
 import MatchSummaryView from "./MatchSummaryView";
 
 class MatchSummary extends Component {
+  componentDidMount() {
+    document.title = "Results | Chelsea : My Favourite Club";
+  }
   render() {
     return (
       <div>
@@ -24,10 +27,10 @@ class MatchSummary extends Component {
         <Container>
           <div className="spacer"></div>
           <Row>
-            <Col md="9">
+            <Col lg="9" md="8">
               <MatchSummaryView />
             </Col>
-            <Col md="3">
+            <Col lg="3" md="4">
               <Quicklinks />
             </Col>
           </Row>

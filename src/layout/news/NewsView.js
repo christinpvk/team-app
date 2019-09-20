@@ -5,6 +5,9 @@ import Quicklinks from "../quicklink/Quicklinks";
 import { connect } from "react-redux";
 
 class NewsView extends Component {
+  componentDidMount() {
+    document.title = "News | Chelsea : My Favourite Club";
+  }
   render() {
     console.log(this.props.news);
     return (
@@ -25,7 +28,7 @@ class NewsView extends Component {
         <Container>
           <div className="spacer"></div>
           <Row>
-            <Col md="9">
+            <Col lg="9" md="8">
               <div className="news-view">
                 <p class="badges bg-success mb-0">{this.props.news.category}</p>
                 <h2 className="title">{this.props.news.heading}</h2>
@@ -57,7 +60,7 @@ class NewsView extends Component {
                 </p>
               </div>
             </Col>
-            <Col md="3">
+            <Col lg="3" md="4">
               <Quicklinks />
             </Col>
           </Row>

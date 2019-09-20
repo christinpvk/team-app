@@ -45,11 +45,11 @@ export default class Latestnews extends React.Component {
       <div>
         <Row>
           {this.state.latestnewsnew.map(item => (
-            <Col md="3" key={item.id}>
+            <Col lg="3" md="6" sm="6" key={item.id}>
               <LatestNewsItem item={item} />
             </Col>
           ))}
-          <Col md="3">
+          <Col lg="3" md="6" sm="6">
             <Link to="/Photos">
               <div className="full-block media-outer quick-view">
                 <p className="badges bg-info mb-0">gallery</p>

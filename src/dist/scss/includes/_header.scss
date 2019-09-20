@@ -92,6 +92,31 @@
         }
       }
     }
+    .navbar-collapse {
+      @media only screen and (max-width: 767px) {
+        background: #fff;
+        margin-top: 1rem;
+      }
+      &.show {
+        .navbar-nav {
+          li {
+            a {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-light {
+    button {
+      padding: 0;
+      border: none;
+      outline: none;
+    }
+    .navbar-toggler-icon {
+      background-image: url("../img/menu-icon-white.png");
+    }
   }
 }
 .header-white {
@@ -106,6 +131,11 @@
           color: $secondary-color;
         }
       }
+    }
+  }
+  .navbar-light {
+    .navbar-toggler-icon {
+      background-image: url("../img/menu-icon-primary.png");
     }
   }
 }

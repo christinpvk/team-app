@@ -222,7 +222,7 @@ export default class Resultslider extends React.Component {
           }
         },
         {
-          breakpoint: 640,
+          breakpoint: 767,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1

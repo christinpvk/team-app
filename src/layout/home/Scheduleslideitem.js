@@ -30,18 +30,6 @@ class ScheduleSlideItem extends Component {
               <span className="month ml-1">{this.props.item.month}</span>
               <span className="year ml-1">{this.props.item.year}</span>
             </p>
-            <Badge
-              className="ml-auto match-category league zi-99"
-              color={
-                this.props.item.category === "league"
-                  ? "league"
-                  : this.props.item.category === "super-league"
-                  ? "super-league"
-                  : "friendly"
-              }
-            >
-              {this.props.item.matchtype}
-            </Badge>
           </div>
         </CardHeader>
         <CardBody>
@@ -63,6 +51,18 @@ class ScheduleSlideItem extends Component {
                 <span className="team-name">{this.props.item.secondteam}</span>
               </h6>
               <p className="stadium">{this.props.item.stadium}</p>
+              <Badge
+                className="ml-auto match-category league zi-99"
+                color={
+                  this.props.item.category === "league"
+                    ? "league"
+                    : this.props.item.category === "super-league"
+                    ? "super-league"
+                    : "friendly"
+                }
+              >
+                {this.props.item.matchtype}
+              </Badge>
             </div>
             <div className="second-team w-25">
               <img src={"../images/" + this.props.item.secondteamlogo}></img>

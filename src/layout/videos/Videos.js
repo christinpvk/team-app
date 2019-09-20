@@ -4,6 +4,9 @@ import Pageheader from "../header/Pageheader";
 import VideoList from "./VideoList";
 
 export default class Videos extends React.Component {
+  componentDidMount() {
+    document.title = this.props.title;
+  }
   render() {
     return (
       <div>

@@ -95,14 +95,14 @@ class ScheduleList extends Component {
     return (
       <div>
         <Row>
-          <Col md="9">
+          <Col lg="9" md="8">
             {this.state.schedulelistnew.map(item => (
               <div className="mb-3 pb-2" key={item.id}>
                 <ScheduleListItem item={item} />
               </div>
             ))}
           </Col>
-          <Col md="3">
+          <Col lg="3" md="4">
             <Quicklinks />
           </Col>
         </Row>

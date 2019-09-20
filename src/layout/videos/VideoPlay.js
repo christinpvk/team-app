@@ -5,6 +5,9 @@ import { connect } from "react-redux";
 import Relatedvideos from "./RelatedVideos";
 
 class VideoPlay extends Component {
+  componentDidMount() {
+    document.title = "videos | Chelsea : My Favourite Club";
+  }
   render() {
     return (
       <div>

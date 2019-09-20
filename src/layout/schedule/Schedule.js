@@ -4,6 +4,9 @@ import Pageheader from "../header/Pageheader";
 import ScheduleList from "./ScheduleList";
 
 class Schedule extends React.Component {
+  componentDidMount() {
+    document.title = this.props.title;
+  }
   render() {
     return (
       <div>

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class TableChampionsLeague extends Component {
   render() {
     return (
-      <div>
+      <div className="table-responsive">
         <table class="table">
           <thead>
             <tr>

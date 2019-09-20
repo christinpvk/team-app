@@ -4,6 +4,9 @@ import Pageheader from "../header/Pageheader";
 import ResultList from "./ResultList";
 
 export default class Result extends React.Component {
+  componentDidMount() {
+    document.title = this.props.title;
+  }
   render() {
     return (
       <div>

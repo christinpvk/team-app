@@ -119,7 +119,7 @@ class TablePremierLeague extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="table-responsive">
         <table class="table">
           <thead>
             <tr>

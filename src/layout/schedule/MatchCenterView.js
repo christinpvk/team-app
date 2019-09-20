@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Badge } from "reactstrap";
 
 class MatchCenterView extends Component {
   render() {
@@ -36,6 +37,18 @@ class MatchCenterView extends Component {
               <p className="text-white stadium">
                 {this.props.matchCenter.stadium}
               </p>
+              <Badge
+                className="ml-auto mt-2 match-category league zi-99"
+                color={
+                  this.props.matchCenter.category === "league"
+                    ? "league"
+                    : this.props.matchCenter.category === "super-league"
+                    ? "super-league"
+                    : "friendly"
+                }
+              >
+                {this.props.matchCenter.category}
+              </Badge>
             </div>
             <div className="second-team w-25">
               <img

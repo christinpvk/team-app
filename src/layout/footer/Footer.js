@@ -36,13 +36,13 @@ export default class Footer extends React.Component {
             </Col>
           </Row> */}
           <Row className="top-bar">
-            <Col md="6">
+            <Col md="6" xs="3">
               <img
                 src="../images/logo-chelsea.png"
                 className="footer-logo"
               ></img>
             </Col>
-            <Col md="6">
+            <Col md="6" xs="9">
               <ul className="social-nav p-0 mb-0">
                 <li>
                   <Link to="" data-tip="Facebook">

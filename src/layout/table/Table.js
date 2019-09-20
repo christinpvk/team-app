@@ -4,6 +4,9 @@ import Pageheader from "../header/Pageheader";
 import PointTabs from "./PointTabs";
 
 export default class Table extends React.Component {
+  componentDidMount() {
+    document.title = this.props.title;
+  }
   render() {
     return (
       <div>

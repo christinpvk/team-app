@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Badge } from "reactstrap";
 
 class MatchSummaryView extends Component {
   render() {
@@ -97,6 +98,18 @@ class MatchSummaryView extends Component {
                   ) : null}
                 </div>
               </div>
+              <Badge
+                className="ml-auto mt-4 match-category league zi-99"
+                color={
+                  this.props.matchSummary.category === "league"
+                    ? "league"
+                    : this.props.matchSummary.category === "super-league"
+                    ? "super-league"
+                    : "friendly"
+                }
+              >
+                {this.props.matchSummary.category}
+              </Badge>
             </div>
             <div className="second-team w-25">
               <img
@@ -105,7 +118,7 @@ class MatchSummaryView extends Component {
               ></img>
             </div>
           </div>
-          <div className="summary">
+          <div className="summary mt-3">
             <h4>{this.props.matchSummary.summary}</h4>
           </div>
         </div>

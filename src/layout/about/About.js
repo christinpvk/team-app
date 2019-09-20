@@ -4,6 +4,9 @@ import Pageheader from "../header/Pageheader";
 import ComingSoon from "../comingsoon/ComingSoon";
 
 export default class About extends React.Component {
+  componentDidMount() {
+    document.title = this.props.title;
+  }
   render() {
     return (
       <div>
