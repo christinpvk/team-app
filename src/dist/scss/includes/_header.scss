@@ -85,6 +85,10 @@
         &:focus {
           color: rgb(255, 255, 255);
         }
+        @media only screen and (max-width: 767px) {
+          text-align: center;
+          padding: 1.2rem 0;
+        }
       }
       &:last-child {
         .nav-link {
