@@ -101,7 +101,7 @@ class MatchSummaryView extends Component {
               <Badge
                 className="ml-auto mt-4 match-category league zi-99"
                 color={
-                  this.props.matchSummary.category === "league"
+                  this.props.matchSummary.category === "premier league"
                     ? "league"
                     : this.props.matchSummary.category === "super-league"
                     ? "super-league"

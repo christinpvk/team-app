@@ -9,7 +9,7 @@ class ScheduleList extends Component {
     schedulelist: [
       {
         id: 1,
-        category: "league",
+        category: "premier league",
         firstteam: "arsenal",
         secondteam: "chelsea",
         firstteamlogo: "logo-arsenal.png",
@@ -39,7 +39,7 @@ class ScheduleList extends Component {
       },
       {
         id: 3,
-        category: "league",
+        category: "premier league",
         firstteam: "chelsea",
         secondteam: "manchester city",
         firstteamlogo: "logo-chelsea.png",
@@ -54,7 +54,7 @@ class ScheduleList extends Component {
       },
       {
         id: 4,
-        category: "league",
+        category: "premier league",
         firstteam: "liverpool",
         secondteam: "chelsea",
         firstteamlogo: "logo-liverpool.png",

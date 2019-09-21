@@ -40,7 +40,7 @@ class MatchCenterView extends Component {
               <Badge
                 className="ml-auto mt-2 match-category league zi-99"
                 color={
-                  this.props.matchCenter.category === "league"
+                  this.props.matchCenter.category === "premier league"
                     ? "league"
                     : this.props.matchCenter.category === "super-league"
                     ? "super-league"

@@ -47,8 +47,8 @@ class ScheduleListItem extends Component {
                     <Badge
                       className="ml-auto match-category league zi-99 mt-3"
                       color={
-                        this.props.item.category === "league"
-                          ? "premier league"
+                        this.props.item.category === "premier league"
+                          ? "league"
                           : this.props.item.category === "super-league"
                           ? "super-league"
                           : "friendly"

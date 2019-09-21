@@ -9,7 +9,7 @@ class ResultList extends Component {
     resultlist: [
       {
         id: 1,
-        category: "league",
+        category: "premier league",
         matchtype: "premier league",
         firstteam: "Chelsea",
         secondteam: "leicester-city",
@@ -84,7 +84,7 @@ class ResultList extends Component {
       },
       {
         id: 3,
-        category: "league",
+        category: "premier league",
         matchtype: "premier league",
         firstteam: "manchester united",
         secondteam: "chelsea",
@@ -125,7 +125,7 @@ class ResultList extends Component {
       },
       {
         id: 4,
-        category: "league",
+        category: "premier league",
         matchtype: "premier league",
         firstteam: "Chelsea",
         secondteam: "everton",
@@ -163,7 +163,7 @@ class ResultList extends Component {
       },
       {
         id: 5,
-        category: "league",
+        category: "premier league",
         matchtype: "premier league",
         firstteam: "westham united",
         secondteam: "Chelsea",
