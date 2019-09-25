@@ -17,7 +17,7 @@ export default class Contact extends React.Component {
               <Pageheader />
               <Row>
                 <Col md="12">
-                  <h2 className="page-title mb-0">contact</h2>
+                  <h2 className="page-title mb-0">Contacts</h2>
                 </Col>
               </Row>
             </Container>
