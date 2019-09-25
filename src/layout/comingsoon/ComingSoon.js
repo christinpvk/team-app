@@ -11,7 +11,7 @@ class ComingSoon extends Component {
               <h2>
                 coming soon!<span className="ml-2">stay tuned!</span>
               </h2>
-              <p>We are actively working on it, so check back soon!....</p>
+              <p>We are actively working on it, so check back soon!</p>
             </Col>
           </Row>
         </Container>
