@@ -46,6 +46,7 @@ class Home extends React.Component {
         <div className="section-banner">
           <MainPartners />
         </div>
+        <div></div>
       </div>
     );
   }
